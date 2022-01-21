@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
 
-specVersion: '2.6'
+specVersion: '2.4'
 metadata:
   name: 'zmm_concrt_use'
 type: application
@@ -14,8 +14,8 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
-          url: http://saps4hapdv1.ps.co.th:8000/
-          client: "120"
+          destination: ERD_120
+          url: http://dev.sap.com:8080
         app:
           name: ZMM_CONCRT_USE
           description: Record Concrete Usage
