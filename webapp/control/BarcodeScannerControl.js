@@ -251,7 +251,7 @@ sap.ui.define([
             z.decodeFromVideoDevice(null, h.getId() + '-video', function(e, K) {
                 G();
                 if (e) {
-                    alert(e);
+                    alert(e); 
                     var M, N, O;
                     var P = 0, Q = 0, T = 0, U = 0, i;
                     if (l && !p) {
