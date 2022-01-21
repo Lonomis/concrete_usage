@@ -245,8 +245,7 @@ sap.ui.define([
             if (!j) {
                 j = h ? h.getDomRef('video') : undefined;
             }
-            //z.decodeFromVideoDevice(null, h.getId() + '-video', function(e, K) {
-            z.decodeOnceFromVideoDevice(null, h.getId() + '-video', function(e, K) {
+            z.decodeFromVideoDevice(null, h.getId() + '-video', function(e, K) {
                 G();
                 if (e) {
                     var M, N, O;
