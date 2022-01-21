@@ -65,12 +65,15 @@ sap.ui.define([
     function u() {
         Z = sap.ui.requireSync("zmmo064/lib/ZXing");
         if (Z) {
-            z = new Z.BrowserMultiFormatReader();
+            //z = new Z.BrowserMultiFormatReader();
+            z = new Z.BrowserPDF417Reader();
             if (z) {
-                L.debug("ZXing BrowserMultiFormatReader API is available!");
+                //L.debug("ZXing BrowserMultiFormatReader API is available!");
+                L.debug("ZXing BrowserPDF417Reader API is available!");
             } else {
                 s.setProperty("/available", false);
-                L.error("BarcodeScanner: ZXing BrowserMultiFormatReader API is not available");
+                //L.error("BarcodeScanner: ZXing BrowserMultiFormatReader API is not available");
+                L.error("BarcodeScanner: ZXing BrowserPDF417Reader API is not available");
             }
         } else {
             s.setProperty("/available", false);
@@ -248,6 +251,7 @@ sap.ui.define([
             z.decodeFromVideoDevice(null, h.getId() + '-video', function(e, K) {
                 G();
                 if (e) {
+                    alert(e);
                     var M, N, O;
                     var P = 0, Q = 0, T = 0, U = 0, i;
                     if (l && !p) {

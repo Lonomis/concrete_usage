@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
 
-specVersion: '2.4'
+specVersion: '2.6'
 metadata:
   name: 'zmm_concrt_use'
 type: application
@@ -20,4 +20,4 @@ builder:
           name: ZMM_CONCRT_USE
           description: Record Concrete Usage
           package: ZMM
-          transport: ERDK901906
+          transport: ERDK904292
