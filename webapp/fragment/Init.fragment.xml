@@ -14,11 +14,12 @@
                 adjustLabelSpan="false"
                 emptySpanXL="4"
                 emptySpanL="4"
-                emptySpanM="4"
+                emptySpanM="2"
                 emptySpanS="0"
                 columnsXL="1"
                 columnsL="1"
                 columnsM="1"
+                breakpointM="630"
                 singleContainerFullSize="false"/>
         </f:layout>
         <f:formContainers>
@@ -43,7 +44,7 @@
                             <Input  value="{input>/ProductionOrder}"
                                     maxLength="12">
                                 <layoutData>
-                                    <l:GridData span="XL3 L3 M3 S8"/>
+                                    <l:GridData span="XL3 L3 M5 S8"/>
                                 </layoutData>
                             </Input>
                             <Input  value="{input>/ComponentItemNo}" 
