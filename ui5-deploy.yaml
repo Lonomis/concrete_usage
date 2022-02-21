@@ -17,7 +17,7 @@ builder:
           destination: ERD_120
           url: http://dev.sap.com:8080
         app:
-          name: ZTESTGITCLONE
+          name: ZMM_CONCRT_USE
           description: Record Concrete Usage
-          package: $TMP
-          transport: ""
+          package: ZMM
+          transport: ERDK904450
