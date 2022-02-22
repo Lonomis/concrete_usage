@@ -1,5 +1,4 @@
 {
-  "version": "0.2.0",
   "configurations": [
     {
       "name": "Start zmm_concrt_use",
@@ -129,11 +128,21 @@
       }
     }
   ],
+  "compounds": [],
+  "version": "0.2.0",
   "inputs": [
     {
       "id": "UI5Version",
       "type": "command",
       "command": "sap.ux.appGenerator.ui5Version"
+    },
+    {
+      "id": "UI5MinVersion1.65.0",
+      "type": "command",
+      "command": "sap.ux.appGenerator.ui5Version",
+      "args": {
+        "minUI5Version": "1.65.0"
+      }
     }
   ]
 }
